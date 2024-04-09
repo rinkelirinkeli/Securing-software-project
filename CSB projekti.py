@@ -21,7 +21,7 @@ def login(request):
     else:
         # FLAW 5: Security Lonning and Monitoring Failures
             # The failed (possibly malicious) logs are not stored. 
-            FailedLogins.objects.create(user=user, tried_passw=passwrd)
+            
         return HttpResponse("Invalid username or password")
 
 
